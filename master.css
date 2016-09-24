@@ -45,5 +45,10 @@ background-color: transparent;
   font-family: monospace;
   font-size: 35px;
   background-color: yellow;
+  color: red;
+}
+.para1{
+  border: 2px solid black;
   
+
 }
