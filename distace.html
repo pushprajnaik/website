@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>distance</title>
+  </head>
+  <body>
+    <button id="start" onclick="start()"> Start </button>
+    <button id="stop" onclick="stop()"> Stop </button>
+    <p id="display"> </p>
+      <p id="display1"> </p>
+      <p id="display2"> </p>
+
+
+    <!--  script -->
+
+    <script>
+
+    var lat1,long1,coords1,lat,long,coords;
+
+      function start(){
+      //  loadjscssfile("D:\atom_projects\mysite\website\loadcss.css", "css") ////dynamically load and add this .css file
+        navigator.geolocation.getCurrentPosition(c);
+        return flase;
+      }
+
+        var c = function(pos){
+           lat = pos.coords.latitude,
+              long = pos.coords.longitude,
+              coords = lat +','+ long;
+              document.getElementById('display').innerHTML = coords;
+            }
+
+
+            //*****************************************************//
+
+
+
+            function stop(){
+              navigator.geolocation.getCurrentPosition(d);
+              return flase;
+            }
+
+              var d = function(pos){
+                 lat1 = pos.coords.latitude,
+                    long1 = pos.coords.longitude,
+                    coords1 = lat1 +','+ long1;
+
+                    document.getElementById('display1').innerHTML = coords1;
+
+                    var dis = Math.sqrt((lat1-lat)*(lat1-lat)+(long1-long)*(long1-long));
+
+                       document.getElementById('display2').innerHTML = dis/1000+' km';
+                  
+                }
+
+
+// ****************************************************************************************************************
+        function loadjscssfile(filename, filetype){
+        if (filetype=="js"){ //if filename is a external JavaScript file
+        var fileref=document.createElement('script')
+        fileref.setAttribute("type","text/javascript")
+        fileref.setAttribute("src", filename)
+        }
+        else if (filetype=="css"){ //if filename is an external CSS file
+        var fileref=document.createElement("link")
+        fileref.setAttribute("rel", "stylesheet")
+        fileref.setAttribute("type", "text/css")
+        fileref.setAttribute("href", filename)
+        }
+        if (typeof fileref!="undefined")
+        document.getElementsByTagName("head")[0].appendChild(fileref)
+        }
+
+        //loadjscssfile("myscript.js", "js") //dynamically load and add this .js file
+        //loadjscssfile("javascript.php", "js") //dynamically load "javascript.php" as a JavaScript file
+      //  loadjscssfile("loadcss.css", "css") ////dynamically load and add this .css file
+
+
+
+    </script>
+
+
+
+    </body>
+</html>

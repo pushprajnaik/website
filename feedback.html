@@ -2,41 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>feedback</title>
+    <title>videoheading</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
   </head>
   <body>
-    <style media="screen">
-
-    header{
-        color: white;
-
-      /*  background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;*/
-
-        }
-
-video{
-  width:1800px;
-  height: 200px;
-  }
-    </style>
-
-
-
-<header>
-  <div class="cotainer">
-      <video src="Kar Gayi Chull - Kapoor and Sons (HD 720p).mp4" autoplay  loop>
-
+      <video autoplay loop>
+        <source src="Tom and Jerry Kids Show Season 1 - _Bat Mouse_.mp4" type="video/mp4">
+      </video>
+      <div class="text">
+          CODE_HER
       </div>
-
-      <h1>CODE_HER</h1>
-</header>
-
-
-
-</video>
+    <style media="screen">
+        video
+        {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          min-width: 100%;
+          min-height: 100%;
+          width:auto;
+          height: 75px;
+          z-index: -1;
+              }
+          .text{
+            font-size: 75px;
+            font-family: 'Bungee Shade',cursive;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+              transform: translate(-50%,-50%);
+          }
+    </style>
   </body>
 </html>

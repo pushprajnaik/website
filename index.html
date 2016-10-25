@@ -1,53 +1,143 @@
 <!DOCTYPE html>
+
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>mysite</title>
-    <link rel="stylesheet" type="text/css" href="master.css"/ >
-
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
   </head>
   <body>
 
-      <header>
-        <h1>CODE_HER</h1>
-      </header>
-        <nav>
+<header>
+  <h1 id="h1">Pushpraj   Naik</h1>
+</header>
+<div class="navigation">
+  <nav>
+      <ul>
+        <li><a href="#p1">News</a></li>
+        <li><a href="#p2">About</a></li>
+        <li><a href="#p3">Social Networking</a></li>
+        <li><a href="#p4">Contact</a></li>
 
-              <ul>
-                <li><a href="shortcut.html">HOME</a></li>
-                <li><a href="html_css.html">MENU</a></li>
-                <li><a href="html_css.html">SITES</a></li>
-                <li><a href="html_css.html">CONTACT</a></li>
-                <li><a href="html_css.html">ADDRESS</a></li>
+      </ul>
+  </nav>
+</div>
 
-              </ul>
+<div class="container">
+  <div class="news">
 
 
-          </nav>
-<div class="box1">
-    <header id="head1">
-
-          <h1>Superman</h1>
-
-    </header>
-    <div class="desc1">
-        <h2>Superman is a fictional superhero appearing in American comic books published by DC Comics. The character was created by writer Jerry Siegel and artist Joe Shuster, high school students living in Cleveland, Ohio, in 1933. They sold Superman to Detective Comics, the future DC Comics, in 1938.</h2>
-    </div>
-    <div class="para1">
-      <p>
-        Superman resides and operates in the fictional American city of Metropolis. As Clark Kent, he is a journalist for the Daily Planet, a Metropolis newspaper. Superman's love interest is generally Lois Lane, and his archenemy is supervillain Lex Luthor. He is typically a member of the Justice League and close ally of Batman and Wonder Woman. Like other characters in the DC Universe, several alternate versions of Superman have been depicted over the years.
-
-Superman's appearance is distinctive and iconic; he usually wears a blue costume with a red-and-yellow emblem on the chest, consisting of the letter S in a shield shape, and a red cape. This shield is used in many media to symbolize the character. Superman is widely considered an American cultural icon.[1][3][4][5] He has fascinated scholars, with cultural theorists, commentators, and critics alike exploring the character's impact and role in the United States and worldwide. The character's ownership has often been the subject of dispute, with Siegel and Shuster twice suing for the return of rights. The character has been adapted extensively and portrayed in other forms of media as well, including films, television series, and video games. Several actors have portrayed Superman in motion pictures and TV series including Kirk Alyn, George Reeves, Christopher Reeve, Tom Welling, Brandon Routh and Henry Cavill.
-      </p>
-
-    </div>
-
+  </div>
 
 </div>
 
 
-<footer>
-   copyright &copy 2016; by CODE_HER :)
-</footer>
+
+
+
+    <?-- --------------------------style------------------------------- -->
+
+<style media="screen">
+
+body,html{
+        padding: 0;
+        margin: 0;}
+
+  header{
+    background-image: url(AMAZON.jpg);
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height:500px;
+    padding: 0;
+    margin: 0;
+
+  }
+  header h1{
+    font-family: 'Monoton', cursive;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.p{
+  background-image: url(code1.jpg);
+
+  position: absolute;
+  margin-top: 50px;
+  z-index: -1;
+  width: 100%;
+  height:500px;
+
+}
+
+
+.para1{
+  font-style: normal;
+  width: 30%;
+  height: auto;
+  border: 1px solid black;
+  float: left;
+  margin: 20px;
+
+}
+
+
+.navigation li {
+        display: inline;
+        list-style-type: none;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Monoton',cursive;
+        width: 100%;
+        color: white;
+
+      }
+.navigation a {  text-decoration: none;}
+.navigation ul{  background-color: rgba(0,0,0,0.5);
+margin: 0;
+width: 100%;
+height: 40px;}
+
+ul{
+  position: fixed;
+  top: 0;
+}
+@media only screen and( max-width:360px) {
+  .navigation li {
+          display:block;}
+
+header h1{
+  font-family: 'Monoton', cursive;
+  font-size: 50px;
+
+}
+
+
+  header{
+
+    width: 100%;
+    height:100%;
+  }
+  .para1{
+   overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+  }
+  .p{height: 100%;}
+
+}
+
+</style>
+
   </body>
 </html>

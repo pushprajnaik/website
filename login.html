@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
     <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
@@ -14,24 +16,28 @@
               Login
           </div>
           <div class="detail">
-            <form>
+
               <input type="text" name="username" id="un" placeholder="Username"><br>
               <input type="password" name="password" id="pw" placeholder="Password"><br>
               <button type="button" id="button1" onclick="f1()">Submit</button><br>
 
-            </form>
+
           </div>
       </div>
       <?--  ---------------- style   ---------------- -->
   <style media="screen">
-      .box{width: 500px;
-           height: auto;
-           background-color: transparent;
-           margin-left:370px;
-           padding: 20px;
-           border-radius: 10px;}
 
-      .heading{background-color: transparent;
+
+      .box{
+           width: 100%;
+           height:auto;
+           background-color: transparent;
+           
+
+         }
+
+      .heading{
+              background-color: transparent;
               color: white;
               font-size: 70px;
               font-family: 'Bungee Shade', cursive;
@@ -42,12 +48,16 @@
         .detail{
               background-color:  transparent;
               padding: 20px;
+              width: 100%;
               margin-top: 10px;
               margin-bottom: 10px;
               height: auto;
+              margin-left:50px;
+
 
         }
-        #un , #pw{width: 100%;
+        #un , #pw{
+            width:50%;
             background-color: transparent;
             height: 50px;
             border-radius: 10px;
@@ -60,7 +70,7 @@
         #button1 {
                 background-color: transparent;
                 color: white;
-                width: 100%;
+                width: 50%;
                 height: 50px;
                 margin: 20px;
                 margin-top: 40px;
@@ -69,21 +79,40 @@
                 font-family: 'Indie Flower', cursive;
                 }
          #button1:hover{
-                //background-color: red;
-                //color:white;
+
                 border-color: blue;
         }
-        .heading:hover{  //font-family: 'Pacifico', cursive;
-                        color: black;}
-          body{background-image: url(AMAZON.jpg);
-              position: absolute;
-              top:0;
-              bottom:0;
+        .heading:hover{
+                        color: black;
+                      }
+        body{
+
+              background-image: url(AMAZON.jpg);
+              position:relative;
+              //top:0;
+              //bottom:0;
               z-index: -1;
               //background-repeat: no-repeat;
               }
+          body,html{
+            margin: 0;
+            padding: 0;
+          }
+
+@media screen and (max-width:500px)  {
+  .box{
+        width:100%;
+       height: auto;
+       background-color: transparent;
+       margin-left:auto;
+      }
+    body{background-image: url(AMAZON.jpg);
+          position: relative;
 
 
+          }
+
+}
   </style>
   </body>
 </html>

@@ -1,0 +1,20 @@
+#display{
+  width: 300px;
+  height: 300px;
+  font-size: 30px;
+  background-color: pink;
+/*  visibility: hidden;*/
+  transition: all 2s;
+}
+/*#display:hover{
+  visibility: visible;
+width: 500px;
+}*/
+
+html,body{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: red;
+}

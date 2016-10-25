@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>geolocationL</title>
+  </head>
+  <body>
+    <button id="getloation" onclick="fun()"> get location</button>
+    <iframe id="googlemap" width="600" height="450" frameborder="0" style="border:0"
+src="https://maps.google.co.in?output=embed"></iframe>
+
+
+<p id="demo">
+
+</p>
+    <script>
+      var c = function(pos){
+        var lat= pos.coords.latitude,
+            long= pos.coords.longitude,
+            coords=lat+','+long;
+
+        document.getElementById('googlemap').setAttribute('scr','https://maps.google.co.in?q='+coords +'&z=60&output=embed')
+        document.getElementById('demo').innerHTML= coords;
+      }
+
+      function fun(){
+        navigator.geolocation.getCurrentPosition(c);
+        return false;
+      }
+
+
+
+    </script>
+    <style media="screen">
+      #demo{
+        background-color: green;
+        font-size: 30px;
+
+      }
+
+    </style>
+  </body>
+</html>
